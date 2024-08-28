@@ -1,0 +1,771 @@
+
+*** Running vivado
+    with args -log doorlock_keypad.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source doorlock_keypad.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source doorlock_keypad.tcl -notrace
+Command: synth_design -top doorlock_keypad -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5536 
+WARNING: [Synth 8-2490] overwriting previous definition of module edge_detector_p [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/controler.v:446]
+WARNING: [Synth 8-6901] identifier 'pw_fnd' is used before its declaration [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/cntr_mode.v:23]
+WARNING: [Synth 8-6901] identifier 'pw_enpw' is used before its declaration [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/cntr_mode.v:23]
+WARNING: [Synth 8-6901] identifier 'password' is used before its declaration [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/cntr_mode.v:23]
+WARNING: [Synth 8-6901] identifier 'entered_password' is used before its declaration [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/cntr_mode.v:23]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1155.680 ; gain = 233.535
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'doorlock_keypad' [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/cntr_mode.v:3]
+	Parameter IDLE bound to: 8'b00000001 
+	Parameter INIT bound to: 8'b00000010 
+	Parameter SET_PASSWORD bound to: 8'b00000100 
+	Parameter SEND_PASSWORD bound to: 8'b00001000 
+	Parameter LCD_CLEAR bound to: 8'b00010000 
+	Parameter ENTER_PASSWORD bound to: 8'b00100000 
+	Parameter COMPLETE_PASSWORD bound to: 8'b01000000 
+	Parameter SECURITY_MODE bound to: 8'b10000000 
+INFO: [Synth 8-6157] synthesizing module 'keypad_cntr_FSM' [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/controler.v:275]
+	Parameter SCAN0 bound to: 5'b00001 
+	Parameter SCAN1 bound to: 5'b00010 
+	Parameter SCAN2 bound to: 5'b00100 
+	Parameter SCAN3 bound to: 5'b01000 
+	Parameter KEY_PROCESS bound to: 5'b10000 
+INFO: [Synth 8-6157] synthesizing module 'edge_detector_p' [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/controler.v:446]
+INFO: [Synth 8-6155] done synthesizing module 'edge_detector_p' (1#1) [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/controler.v:446]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/controler.v:349]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/controler.v:342]
+INFO: [Synth 8-6155] done synthesizing module 'keypad_cntr_FSM' (2#1) [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/controler.v:275]
+INFO: [Synth 8-6157] synthesizing module 'fnd_cntr' [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/controler.v:403]
+INFO: [Synth 8-6157] synthesizing module 'ring_counter_fnd' [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/controler.v:425]
+WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_p' has 5 connections declared, but only 4 given [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/controler.v:433]
+INFO: [Synth 8-6155] done synthesizing module 'ring_counter_fnd' (3#1) [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/controler.v:425]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/controler.v:413]
+INFO: [Synth 8-6157] synthesizing module 'decoder_7seg' [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/controler.v:473]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_7seg' (4#1) [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/controler.v:473]
+INFO: [Synth 8-6155] done synthesizing module 'fnd_cntr' (5#1) [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/controler.v:403]
+INFO: [Synth 8-6157] synthesizing module 'clock_div_100' [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/controler.v:500]
+INFO: [Synth 8-6157] synthesizing module 'edge_detector_n' [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/controler.v:526]
+INFO: [Synth 8-6155] done synthesizing module 'edge_detector_n' (6#1) [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/controler.v:526]
+WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_n' has 5 connections declared, but only 4 given [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/controler.v:519]
+INFO: [Synth 8-6155] done synthesizing module 'clock_div_100' (7#1) [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/controler.v:500]
+WARNING: [Synth 8-7023] instance 'usec_clock' of module 'clock_div_100' has 4 connections declared, but only 3 given [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/cntr_mode.v:37]
+WARNING: [Synth 8-7023] instance 'usec_clock_1' of module 'clock_div_100' has 4 connections declared, but only 3 given [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/cntr_mode.v:38]
+INFO: [Synth 8-6157] synthesizing module 'button_cntr' [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/controler.v:549]
+WARNING: [Synth 8-7023] instance 'ed' of module 'edge_detector_p' has 5 connections declared, but only 4 given [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/controler.v:558]
+INFO: [Synth 8-6155] done synthesizing module 'button_cntr' (8#1) [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/controler.v:549]
+WARNING: [Synth 8-7023] instance 'key' of module 'button_cntr' has 5 connections declared, but only 4 given [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/cntr_mode.v:57]
+INFO: [Synth 8-6157] synthesizing module 'i2c_lcd_send_byte' [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/controler.v:3]
+	Parameter IDLE bound to: 6'b000001 
+	Parameter SEND_HIGH_NIBBLE_DISABLE bound to: 6'b000010 
+	Parameter SEND_HIGH_NIBBLE_ENABLE bound to: 6'b000100 
+	Parameter SEND_LOW_NIBBLE_DISABLE bound to: 6'b001000 
+	Parameter SEND_LOW_NIBBLE_ENABLE bound to: 6'b010000 
+	Parameter SEND_DISABLE bound to: 6'b100000 
+WARNING: [Synth 8-7023] instance 'ed_go' of module 'edge_detector_n' has 5 connections declared, but only 4 given [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/controler.v:23]
+WARNING: [Synth 8-7023] instance 'usec_clock' of module 'clock_div_100' has 4 connections declared, but only 3 given [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/controler.v:26]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/controler.v:51]
+INFO: [Synth 8-6157] synthesizing module 'I2C_master' [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/controler.v:134]
+	Parameter IDLE bound to: 7'b0000001 
+	Parameter COMM_START bound to: 7'b0000010 
+	Parameter SEND_ADDR bound to: 7'b0000100 
+	Parameter RD_ACK bound to: 7'b0001000 
+	Parameter SEND_DATA bound to: 7'b0010000 
+	Parameter SCL_STOP bound to: 7'b0100000 
+	Parameter COMM_STOP bound to: 7'b1000000 
+WARNING: [Synth 8-7023] instance 'usec_clock' of module 'clock_div_100' has 4 connections declared, but only 3 given [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/controler.v:155]
+WARNING: [Synth 8-7023] instance 'ed_go' of module 'edge_detector_n' has 5 connections declared, but only 4 given [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/controler.v:184]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/controler.v:203]
+WARNING: [Synth 8-3848] Net led in module/entity I2C_master does not have driver. [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/controler.v:141]
+INFO: [Synth 8-6155] done synthesizing module 'I2C_master' (9#1) [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/controler.v:134]
+INFO: [Synth 8-6155] done synthesizing module 'i2c_lcd_send_byte' (10#1) [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/controler.v:3]
+WARNING: [Synth 8-689] width (15) of port connection 'led' does not match port width (16) of module 'i2c_lcd_send_byte' [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/cntr_mode.v:62]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/cntr_mode.v:149]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/cntr_mode.v:181]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/cntr_mode.v:196]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/cntr_mode.v:243]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/cntr_mode.v:256]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/cntr_mode.v:269]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/cntr_mode.v:295]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/cntr_mode.v:335]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/cntr_mode.v:354]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000000001010 is unreachable [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/cntr_mode.v:378]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000000001011 is unreachable [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/cntr_mode.v:378]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000000001111 is unreachable [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/cntr_mode.v:378]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/cntr_mode.v:378]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/cntr_mode.v:452]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/cntr_mode.v:473]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/cntr_mode.v:489]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/cntr_mode.v:559]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/cntr_mode.v:577]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/cntr_mode.v:586]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/cntr_mode.v:610]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/cntr_mode.v:632]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/cntr_mode.v:115]
+WARNING: [Synth 8-6014] Unused sequential element count_usec_1_reg was removed.  [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/cntr_mode.v:51]
+WARNING: [Synth 8-6014] Unused sequential element count_usec_e_1_reg was removed.  [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/cntr_mode.v:88]
+WARNING: [Synth 8-6014] Unused sequential element enter_complete_reg was removed.  [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/cntr_mode.v:101]
+WARNING: [Synth 8-6014] Unused sequential element cnt_string_8_reg was removed.  [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/cntr_mode.v:105]
+WARNING: [Synth 8-6014] Unused sequential element cnt_clear_1_reg was removed.  [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/cntr_mode.v:107]
+WARNING: [Synth 8-6014] Unused sequential element security_pw_reg was removed.  [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/cntr_mode.v:112]
+WARNING: [Synth 8-5788] Register send_buffer_reg in module doorlock_keypad is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/cntr_mode.v:62]
+WARNING: [Synth 8-3848] Net led_key_valid in module/entity doorlock_keypad does not have driver. [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/cntr_mode.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'doorlock_keypad' (11#1) [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/cntr_mode.v:3]
+WARNING: [Synth 8-3331] design I2C_master has unconnected port led[15]
+WARNING: [Synth 8-3331] design I2C_master has unconnected port led[14]
+WARNING: [Synth 8-3331] design I2C_master has unconnected port led[13]
+WARNING: [Synth 8-3331] design I2C_master has unconnected port led[12]
+WARNING: [Synth 8-3331] design I2C_master has unconnected port led[11]
+WARNING: [Synth 8-3331] design I2C_master has unconnected port led[10]
+WARNING: [Synth 8-3331] design I2C_master has unconnected port led[9]
+WARNING: [Synth 8-3331] design I2C_master has unconnected port led[8]
+WARNING: [Synth 8-3331] design I2C_master has unconnected port led[7]
+WARNING: [Synth 8-3331] design I2C_master has unconnected port led[6]
+WARNING: [Synth 8-3331] design I2C_master has unconnected port led[5]
+WARNING: [Synth 8-3331] design I2C_master has unconnected port led[4]
+WARNING: [Synth 8-3331] design I2C_master has unconnected port led[3]
+WARNING: [Synth 8-3331] design I2C_master has unconnected port led[2]
+WARNING: [Synth 8-3331] design I2C_master has unconnected port led[1]
+WARNING: [Synth 8-3331] design I2C_master has unconnected port led[0]
+WARNING: [Synth 8-3331] design doorlock_keypad has unconnected port led_key_valid
+WARNING: [Synth 8-3331] design doorlock_keypad has unconnected port btn[3]
+WARNING: [Synth 8-3331] design doorlock_keypad has unconnected port btn[2]
+WARNING: [Synth 8-3331] design doorlock_keypad has unconnected port btn[1]
+WARNING: [Synth 8-3331] design doorlock_keypad has unconnected port btn[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1218.340 ; gain = 296.195
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1218.340 ; gain = 296.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1218.340 ; gain = 296.195
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1218.340 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/PC/Desktop/SG_workspace/vivado_2019/basys3_soc_24/basys3_soc_24.srcs/constrs_1/imports/家胶颇老/Basys-3-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw_direction'. [C:/Users/PC/Desktop/SG_workspace/vivado_2019/basys3_soc_24/basys3_soc_24.srcs/constrs_1/imports/家胶颇老/Basys-3-Master.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/PC/Desktop/SG_workspace/vivado_2019/basys3_soc_24/basys3_soc_24.srcs/constrs_1/imports/家胶颇老/Basys-3-Master.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn_echo'. [C:/Users/PC/Desktop/SG_workspace/vivado_2019/basys3_soc_24/basys3_soc_24.srcs/constrs_1/imports/家胶颇老/Basys-3-Master.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/PC/Desktop/SG_workspace/vivado_2019/basys3_soc_24/basys3_soc_24.srcs/constrs_1/imports/家胶颇老/Basys-3-Master.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxp6'. [C:/Users/PC/Desktop/SG_workspace/vivado_2019/basys3_soc_24/basys3_soc_24.srcs/constrs_1/imports/家胶颇老/Basys-3-Master.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/PC/Desktop/SG_workspace/vivado_2019/basys3_soc_24/basys3_soc_24.srcs/constrs_1/imports/家胶颇老/Basys-3-Master.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxp15'. [C:/Users/PC/Desktop/SG_workspace/vivado_2019/basys3_soc_24/basys3_soc_24.srcs/constrs_1/imports/家胶颇老/Basys-3-Master.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/PC/Desktop/SG_workspace/vivado_2019/basys3_soc_24/basys3_soc_24.srcs/constrs_1/imports/家胶颇老/Basys-3-Master.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxn6'. [C:/Users/PC/Desktop/SG_workspace/vivado_2019/basys3_soc_24/basys3_soc_24.srcs/constrs_1/imports/家胶颇老/Basys-3-Master.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/PC/Desktop/SG_workspace/vivado_2019/basys3_soc_24/basys3_soc_24.srcs/constrs_1/imports/家胶颇老/Basys-3-Master.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxn15'. [C:/Users/PC/Desktop/SG_workspace/vivado_2019/basys3_soc_24/basys3_soc_24.srcs/constrs_1/imports/家胶颇老/Basys-3-Master.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/PC/Desktop/SG_workspace/vivado_2019/basys3_soc_24/basys3_soc_24.srcs/constrs_1/imports/家胶颇老/Basys-3-Master.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/PC/Desktop/SG_workspace/vivado_2019/basys3_soc_24/basys3_soc_24.srcs/constrs_1/imports/家胶颇老/Basys-3-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/PC/Desktop/SG_workspace/vivado_2019/basys3_soc_24/basys3_soc_24.srcs/constrs_1/imports/家胶颇老/Basys-3-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/doorlock_keypad_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/doorlock_keypad_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1340.023 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1340.023 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1340.023 ; gain = 417.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1340.023 ; gain = 417.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1340.023 ; gain = 417.879
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'keypad_cntr_FSM'
+INFO: [Synth 8-5546] ROM "key_value" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'comm_go_reg' into 'count_usec_e_reg' [C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.srcs/sources_1/new/controler.v:46]
+INFO: [Synth 8-5546] ROM "rs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "password" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "entered_password" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "security_password" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "password" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "entered_password" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "security_password" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                   SCAN0 |                            00001 |                            00001
+                   SCAN1 |                            00010 |                            00010
+                   SCAN2 |                            00100 |                            00100
+                   SCAN3 |                            01000 |                            01000
+             KEY_PROCESS |                            10000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'keypad_cntr_FSM'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1340.023 ; gain = 417.879
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'usec_clock' (clock_div_100) to 'usec_clock_1'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 18    
+	   3 Input      5 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	              112 Bit    Registers := 1     
+	               96 Bit    Registers := 2     
+	               88 Bit    Registers := 2     
+	               72 Bit    Registers := 2     
+	               64 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	                8 Bit    Registers := 4     
+	                7 Bit    Registers := 5     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 21    
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 43    
++---Muxes : 
+	   8 Input     16 Bit        Muxes := 2     
+	   9 Input     16 Bit        Muxes := 4     
+	   7 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
+	   7 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 23    
+	   2 Input      7 Bit        Muxes := 4     
+	   8 Input      7 Bit        Muxes := 1     
+	   7 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   7 Input      6 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 27    
+	   3 Input      5 Bit        Muxes := 1     
+	   9 Input      5 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	  17 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 130   
+	  17 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 7     
+	   7 Input      1 Bit        Muxes := 6     
+	   9 Input      1 Bit        Muxes := 44    
+	   4 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 2     
+	  12 Input      1 Bit        Muxes := 2     
+	  13 Input      1 Bit        Muxes := 1     
+	  19 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 2     
+	  14 Input      1 Bit        Muxes := 2     
+	  11 Input      1 Bit        Muxes := 4     
+	  16 Input      1 Bit        Muxes := 12    
+	  15 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module doorlock_keypad 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 18    
+	   3 Input      5 Bit       Adders := 2     
++---Registers : 
+	              112 Bit    Registers := 1     
+	               96 Bit    Registers := 2     
+	               88 Bit    Registers := 2     
+	               72 Bit    Registers := 2     
+	               64 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	                8 Bit    Registers := 3     
+	                5 Bit    Registers := 21    
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   8 Input     16 Bit        Muxes := 2     
+	   9 Input     16 Bit        Muxes := 4     
+	   7 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
+	   7 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 23    
+	   2 Input      7 Bit        Muxes := 1     
+	   7 Input      7 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 22    
+	   3 Input      5 Bit        Muxes := 1     
+	   9 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 105   
+	   9 Input      1 Bit        Muxes := 44    
+	   4 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 2     
+	  12 Input      1 Bit        Muxes := 2     
+	  13 Input      1 Bit        Muxes := 1     
+	  19 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 2     
+	  14 Input      1 Bit        Muxes := 2     
+	  11 Input      1 Bit        Muxes := 4     
+	  16 Input      1 Bit        Muxes := 12    
+	  15 Input      1 Bit        Muxes := 1     
+Module edge_detector_p 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module keypad_cntr_FSM 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   6 Input      4 Bit        Muxes := 1     
+	  17 Input      4 Bit        Muxes := 1     
+	  17 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 3     
+Module ring_counter_fnd 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module fnd_cntr 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   5 Input      4 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+Module edge_detector_n 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module clock_div_100 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+Module button_cntr 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module I2C_master 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                7 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   8 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+	   8 Input      1 Bit        Muxes := 7     
+Module i2c_lcd_send_byte 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   7 Input      6 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "key_value" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design i2c_lcd_send_byte has unconnected port led[15]
+WARNING: [Synth 8-3331] design i2c_lcd_send_byte has unconnected port led[14]
+WARNING: [Synth 8-3331] design i2c_lcd_send_byte has unconnected port led[13]
+WARNING: [Synth 8-3331] design i2c_lcd_send_byte has unconnected port led[12]
+WARNING: [Synth 8-3331] design i2c_lcd_send_byte has unconnected port led[11]
+WARNING: [Synth 8-3331] design i2c_lcd_send_byte has unconnected port led[10]
+WARNING: [Synth 8-3331] design i2c_lcd_send_byte has unconnected port led[9]
+WARNING: [Synth 8-3331] design i2c_lcd_send_byte has unconnected port led[8]
+WARNING: [Synth 8-3331] design i2c_lcd_send_byte has unconnected port led[7]
+WARNING: [Synth 8-3331] design i2c_lcd_send_byte has unconnected port led[6]
+WARNING: [Synth 8-3331] design i2c_lcd_send_byte has unconnected port led[5]
+WARNING: [Synth 8-3331] design i2c_lcd_send_byte has unconnected port led[4]
+WARNING: [Synth 8-3331] design i2c_lcd_send_byte has unconnected port led[3]
+WARNING: [Synth 8-3331] design i2c_lcd_send_byte has unconnected port led[2]
+WARNING: [Synth 8-3331] design i2c_lcd_send_byte has unconnected port led[1]
+WARNING: [Synth 8-3331] design i2c_lcd_send_byte has unconnected port led[0]
+WARNING: [Synth 8-3331] design doorlock_keypad has unconnected port led_key_valid
+WARNING: [Synth 8-3331] design doorlock_keypad has unconnected port btn[3]
+WARNING: [Synth 8-3331] design doorlock_keypad has unconnected port btn[2]
+WARNING: [Synth 8-3331] design doorlock_keypad has unconnected port btn[1]
+WARNING: [Synth 8-3331] design doorlock_keypad has unconnected port btn[0]
+INFO: [Synth 8-3886] merging instance 'cnt_string_3_reg[4]' (FDCE) to 'cnt_string_3_reg[0]'
+INFO: [Synth 8-3886] merging instance 'cnt_string_3_reg[3]' (FDCE) to 'cnt_string_3_reg[0]'
+INFO: [Synth 8-3886] merging instance 'cnt_string_3_reg[2]' (FDCE) to 'cnt_string_3_reg[0]'
+INFO: [Synth 8-3886] merging instance 'cnt_string_3_reg[1]' (FDCE) to 'cnt_string_3_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cnt_string_3_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\complete_pw_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\complete_pw_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\complete_pw_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\complete_pw_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\complete_pw_reg[39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\complete_pw_reg[47] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\complete_pw_reg[55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\complete_pw_reg[63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\set_pw_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\set_pw_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\set_pw_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\set_pw_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\set_pw_reg[39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\set_pw_reg[47] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\set_pw_reg[55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\set_pw_reg[63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\set_pw_reg[71] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\enter_pw_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\enter_pw_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\enter_pw_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\enter_pw_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\enter_pw_reg[39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\enter_pw_reg[47] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\enter_pw_reg[55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\enter_pw_reg[63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\enter_pw_reg[71] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\enter_pw_reg[79] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\enter_pw_reg[87] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\correct_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\correct_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\correct_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\correct_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\correct_reg[39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\correct_reg[47] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\correct_reg[55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\correct_reg[63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\correct_reg[71] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\correct_reg[79] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\correct_reg[87] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\correct_reg[95] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\warning_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\warning_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\warning_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\warning_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\warning_reg[39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\warning_reg[47] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\warning_reg[55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\warning_reg[63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\warning_reg[71] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\wrong_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\wrong_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\wrong_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\wrong_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\wrong_reg[47] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\wrong_reg[55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\wrong_reg[63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\wrong_reg[71] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\wrong_reg[79] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\wrong_reg[87] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\wrong_reg[95] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\wrong_reg[103] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\wrong_reg[111] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\security_off_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\security_off_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\security_off_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\security_off_reg[39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\security_off_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\security_off_reg[47] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\security_off_reg[55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\security_off_reg[63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\security_off_reg[71] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\security_off_reg[79] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\security_off_reg[87] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\security_off_reg[95] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\security_on_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\security_on_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\security_on_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\security_on_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\security_on_reg[39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\security_on_reg[47] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\security_on_reg[55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\security_on_reg[63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\security_on_reg[71] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\security_on_reg[79] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\security_on_reg[87] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\complete_pw_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\complete_pw_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\complete_pw_reg[19] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\complete_pw_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\complete_pw_reg[35] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\complete_pw_reg[43] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\complete_pw_reg[51] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\complete_pw_reg[59] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\set_pw_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\set_pw_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\set_pw_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\set_pw_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\set_pw_reg[35] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\set_pw_reg[43] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'cnt_wrong_reg[4]' (FDCE) to 'cnt_wrong_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cnt_wrong_reg[3]' (FDCE) to 'cnt_wrong_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cnt_wrong_1_reg[4]' (FDCE) to 'cnt_wrong_1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cnt_wrong_1_reg[3]' (FDCE) to 'cnt_wrong_1_reg[2]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 1340.023 ; gain = 417.879
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:48 . Memory (MB): peak = 1340.023 ; gain = 417.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1412.332 ; gain = 490.188
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 1413.414 ; gain = 491.270
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:01 ; elapsed = 00:01:02 . Memory (MB): peak = 1413.414 ; gain = 491.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:01 ; elapsed = 00:01:02 . Memory (MB): peak = 1413.414 ; gain = 491.270
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:01 ; elapsed = 00:01:02 . Memory (MB): peak = 1413.414 ; gain = 491.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:01 ; elapsed = 00:01:02 . Memory (MB): peak = 1413.414 ; gain = 491.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:01 ; elapsed = 00:01:02 . Memory (MB): peak = 1413.414 ; gain = 491.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:01 ; elapsed = 00:01:02 . Memory (MB): peak = 1413.414 ; gain = 491.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    35|
+|3     |LUT1   |     5|
+|4     |LUT2   |    69|
+|5     |LUT3   |    65|
+|6     |LUT4   |   137|
+|7     |LUT5   |   128|
+|8     |LUT6   |   243|
+|9     |FDCE   |   309|
+|10    |FDPE   |    15|
+|11    |FDRE   |    66|
+|12    |IBUF   |     6|
+|13    |OBUF   |    20|
+|14    |OBUFT  |    17|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------+------------------+------+
+|      |Instance            |Module            |Cells |
++------+--------------------+------------------+------+
+|1     |top                 |                  |  1116|
+|2     |  fnd               |fnd_cntr          |    59|
+|3     |    nolabel_line421 |decoder_7seg      |     7|
+|4     |    rc              |ring_counter_fnd  |    48|
+|5     |      ed            |edge_detector_p_9 |     3|
+|6     |  key               |button_cntr       |    30|
+|7     |    ed              |edge_detector_p_7 |     3|
+|8     |    ed1             |edge_detector_p_8 |     3|
+|9     |  keypad            |keypad_cntr_FSM   |    79|
+|10    |    ed              |edge_detector_p   |     8|
+|11    |  nolabel_line62    |i2c_lcd_send_byte |   381|
+|12    |    ed_go           |edge_detector_n_0 |     6|
+|13    |    nolabel_line130 |I2C_master        |    83|
+|14    |      ed            |edge_detector_n_3 |    12|
+|15    |      ed_go         |edge_detector_n_4 |     3|
+|16    |      usec_clock    |clock_div_100_5   |    20|
+|17    |        ed          |edge_detector_n_6 |     4|
+|18    |    usec_clock      |clock_div_100_1   |    49|
+|19    |      ed            |edge_detector_n_2 |    33|
+|20    |  usec_clock        |clock_div_100     |    49|
+|21    |    ed              |edge_detector_n   |    33|
++------+--------------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:01 ; elapsed = 00:01:02 . Memory (MB): peak = 1413.414 ; gain = 491.270
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 21 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:51 ; elapsed = 00:00:59 . Memory (MB): peak = 1413.414 ; gain = 369.586
+Synthesis Optimization Complete : Time (s): cpu = 00:01:02 ; elapsed = 00:01:02 . Memory (MB): peak = 1413.414 ; gain = 491.270
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1425.262 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 35 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1425.262 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+193 Infos, 76 Warnings, 6 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 1425.262 ; gain = 780.992
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1425.262 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.runs/synth_1/doorlock_keypad.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file doorlock_keypad_utilization_synth.rpt -pb doorlock_keypad_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 28 14:56:44 2024...

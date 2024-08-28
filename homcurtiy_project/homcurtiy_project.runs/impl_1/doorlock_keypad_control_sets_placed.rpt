@@ -1,0 +1,125 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Wed Aug 28 14:57:51 2024
+| Host         : DESKTOP-VQQPT2C running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file doorlock_keypad_control_sets_placed.rpt
+| Design       : doorlock_keypad
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    47 |
+|    Minimum number of control sets                        |    47 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   149 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    47 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |    34 |
+| >= 6 to < 8        |     3 |
+| >= 8 to < 10       |     3 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     5 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              54 |           15 |
+| No           | No                    | Yes                    |              95 |           43 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              12 |           11 |
+| Yes          | No                    | Yes                    |             234 |           80 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-------------------------------------------+------------------+------------------+----------------+
+|  Clock Signal  |               Enable Signal               | Set/Reset Signal | Slice Load Count | Bel Load Count |
++----------------+-------------------------------------------+------------------+------------------+----------------+
+|  clk_IBUF_BUFG | nolabel_line62/cnt_string_4_reg[2]        | reset_p_IBUF     |                1 |              1 |
+|  clk_IBUF_BUFG | nolabel_line62/state_reg[7]_1             | reset_p_IBUF     |                1 |              1 |
+|  clk_IBUF_BUFG | nolabel_line62/cnt_pw_1_reg[1][0]         | reset_p_IBUF     |                2 |              4 |
+|  clk_IBUF_BUFG | nolabel_line62/cnt_pw_reg[1][2]           | reset_p_IBUF     |                1 |              4 |
+|  clk_IBUF_BUFG | nolabel_line62/cnt_pw_2_reg[1][2]         | reset_p_IBUF     |                1 |              4 |
+|  clk_IBUF_BUFG | nolabel_line62/cnt_pw_1_reg[1][1]         | reset_p_IBUF     |                1 |              4 |
+|  clk_IBUF_BUFG | nolabel_line62/cnt_pw_1_reg[1][2]         | reset_p_IBUF     |                2 |              4 |
+|  clk_IBUF_BUFG | keypad/ed/col_reg[0][0]                   | reset_p_IBUF     |                2 |              4 |
+|  clk_IBUF_BUFG | nolabel_line62/cnt_pw_reg[1][3]           | reset_p_IBUF     |                1 |              4 |
+|  clk_IBUF_BUFG | nolabel_line62/cnt_pw_2_reg[1][0]         | reset_p_IBUF     |                1 |              4 |
+|  clk_IBUF_BUFG | nolabel_line62/cnt_pw_reg[1][0]           | reset_p_IBUF     |                1 |              4 |
+|  clk_IBUF_BUFG | nolabel_line62/cnt_pw_reg[1][1]           | reset_p_IBUF     |                1 |              4 |
+|  clk_IBUF_BUFG | nolabel_line62/cnt_pw_2_reg[1][3]         | reset_p_IBUF     |                1 |              4 |
+|  clk_IBUF_BUFG | nolabel_line62/cnt_pw_1_reg[1][3]         | reset_p_IBUF     |                2 |              4 |
+|  clk_IBUF_BUFG | nolabel_line62/cnt_pw_2_reg[1][1]         | reset_p_IBUF     |                1 |              4 |
+|  clk_IBUF_BUFG | fnd/rc/E[0]                               |                  |                4 |              4 |
+|  clk_IBUF_BUFG | nolabel_line62/security_flag_reg[0]       | reset_p_IBUF     |                2 |              5 |
+|  clk_IBUF_BUFG | nolabel_line62/start_entering_reg[0]      | reset_p_IBUF     |                1 |              5 |
+|  clk_IBUF_BUFG | nolabel_line62/start_entering_reg_1[0]    | reset_p_IBUF     |                2 |              5 |
+|  clk_IBUF_BUFG | nolabel_line62/state_reg[3]_1[0]          | reset_p_IBUF     |                2 |              5 |
+|  clk_IBUF_BUFG | keypad/ed/ff_old_reg_1[0]                 | reset_p_IBUF     |                2 |              5 |
+|  clk_IBUF_BUFG | nolabel_line62/busy_reg_1[0]              | reset_p_IBUF     |                2 |              5 |
+|  clk_IBUF_BUFG | nolabel_line62/E[0]                       | reset_p_IBUF     |                1 |              5 |
+|  clk_IBUF_BUFG | nolabel_line62/start_entering_reg_0[0]    | reset_p_IBUF     |                3 |              5 |
+|  clk_IBUF_BUFG | nolabel_line62/send_reg_1[0]              | reset_p_IBUF     |                1 |              5 |
+|  clk_IBUF_BUFG | nolabel_line62/cnt_pw_1_reg[2][0]         | reset_p_IBUF     |                2 |              5 |
+|  clk_IBUF_BUFG | nolabel_line62/send_reg_2[0]              | reset_p_IBUF     |                1 |              5 |
+|  clk_IBUF_BUFG | nolabel_line62/state_reg[3]_0[0]          | reset_p_IBUF     |                2 |              5 |
+|  clk_IBUF_BUFG | nolabel_line62/state_reg[1]_0[0]          | reset_p_IBUF     |                3 |              5 |
+|  clk_IBUF_BUFG | nolabel_line62/security_complete_reg[0]   | reset_p_IBUF     |                2 |              5 |
+|  clk_IBUF_BUFG | nolabel_line62/state_reg[3]_2[0]          | reset_p_IBUF     |                3 |              5 |
+|  clk_IBUF_BUFG | nolabel_line62/cnt_string_a_reg[4][0]     | reset_p_IBUF     |                1 |              5 |
+|  clk_IBUF_BUFG | nolabel_line62/pre_wrong3_flag_1_reg[0]   | reset_p_IBUF     |                1 |              5 |
+|  clk_IBUF_BUFG | nolabel_line62/pre_wrong3_flag_1_reg_0[0] | reset_p_IBUF     |                1 |              5 |
+|  clk_IBUF_BUFG | fnd/rc/ed/E[0]                            | reset_p_IBUF     |                2 |              5 |
+|  clk_IBUF_BUFG | nolabel_line62/send_reg_0[0]              | reset_p_IBUF     |                1 |              5 |
+|  clk_IBUF_BUFG | nolabel_line62/ed_go/E[0]                 | reset_p_IBUF     |                1 |              6 |
+|  clk_IBUF_BUFG | nolabel_line62/data                       | reset_p_IBUF     |                2 |              7 |
+|  clk_IBUF_BUFG | nolabel_line62/nolabel_line130/ed_go/E[0] | reset_p_IBUF     |                2 |              7 |
+|  clk_IBUF_BUFG | nolabel_line62/busy_reg_0[0]              | reset_p_IBUF     |                4 |              8 |
+|  clk_IBUF_BUFG | nolabel_line62/send_reg[0]                |                  |                7 |              8 |
+|  clk_IBUF_BUFG | keypad/ed/E[0]                            | reset_p_IBUF     |                1 |              8 |
+| ~clk_IBUF_BUFG | nolabel_line62/usec_clock/ed/ff_cur_reg_0 | reset_p_IBUF     |                6 |             22 |
+| ~clk_IBUF_BUFG | usec_clock/ed/ff_cur_reg_0                | reset_p_IBUF     |               10 |             22 |
+|  clk_IBUF_BUFG |                                           | reset_p_IBUF     |               26 |             41 |
+|  clk_IBUF_BUFG |                                           |                  |               15 |             54 |
+| ~clk_IBUF_BUFG |                                           | reset_p_IBUF     |               17 |             54 |
++----------------+-------------------------------------------+------------------+------------------+----------------+
+
+
