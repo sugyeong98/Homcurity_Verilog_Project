@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Aug 28 14:56:52 2024
+# Process ID: 8716
+# Current directory: C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.runs/impl_1
+# Command line: vivado.exe -log doorlock_keypad.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source doorlock_keypad.tcl -notrace
+# Log file: C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.runs/impl_1/doorlock_keypad.vdi
+# Journal file: C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source doorlock_keypad.tcl -notrace
