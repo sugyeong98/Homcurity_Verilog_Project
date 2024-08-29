@@ -1,0 +1,20 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto c63283ba217c4de3a761ea6b2bb28127 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot i2c_txtlcd_top_behav xil_defaultlib.i2c_txtlcd_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'rd_wr' [C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.srcs/sources_1/new/controller.v:761]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.edge_detector_p
+Compiling module xil_defaultlib.button_cntr
+Compiling module xil_defaultlib.edge_detector_n
+Compiling module xil_defaultlib.clock_div_100
+Compiling module xil_defaultlib.I2C_master
+Compiling module xil_defaultlib.i2c_lcd_send_byte
+Compiling module xil_defaultlib.i2c_txtlcd_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot i2c_txtlcd_top_behav

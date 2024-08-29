@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=C:/Xilinx/Vitis/2019.2/bin;C:/Xilinx/Vivado/2019.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2019.2/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2019.2/bin
+  PATH=D:/Vitis/2019.2/bin;D:/Vivado/2019.2/ids_lite/ISE/bin/nt64;D:/Vivado/2019.2/ids_lite/ISE/lib/nt64:D:/Vivado/2019.2/bin
 else
-  PATH=C:/Xilinx/Vitis/2019.2/bin;C:/Xilinx/Vivado/2019.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2019.2/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2019.2/bin:$PATH
+  PATH=D:/Vitis/2019.2/bin;D:/Vivado/2019.2/ids_lite/ISE/bin/nt64;D:/Vivado/2019.2/ids_lite/ISE/lib/nt64:D:/Vivado/2019.2/bin:$PATH
 fi
 export PATH
 
@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/PC/Desktop/SG_workspace/vivado_2019/homcurtiy_project/homcurtiy_project.runs/impl_1'
+HD_PWD='C:/Users/wodn0/Documents/GitHub/Homcurity_Verilog-Project/homcurtiy_project/homcurtiy_project.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -42,6 +42,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .init_design.begin.rst
-EAStep vivado -log doorlock_keypad.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source doorlock_keypad.tcl -notrace
+EAStep vivado -log HOMECURITY_TOP.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source HOMECURITY_TOP.tcl -notrace
 
 

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1724824517">
-  <File Type="PA-TCL" Name="doorlock_keypad.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="doorlock_keypad_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="doorlock_keypad_reports.tcl"/>
-  <File Type="RDS-RDS" Name="doorlock_keypad.vds"/>
-  <File Type="RDS-UTIL" Name="doorlock_keypad_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="doorlock_keypad_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="doorlock_keypad.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="doorlock_keypad_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="doorlock_keypad_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1724826796">
+  <File Type="PA-TCL" Name="HOMECURITY_TOP.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="HOMECURITY_TOP_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="HOMECURITY_TOP_reports.tcl"/>
+  <File Type="RDS-RDS" Name="HOMECURITY_TOP.vds"/>
+  <File Type="RDS-UTIL" Name="HOMECURITY_TOP_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="HOMECURITY_TOP_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="HOMECURITY_TOP.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="HOMECURITY_TOP_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="HOMECURITY_TOP_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/controler.v">
+    <File Path="$PSRCDIR/sources_1/ip/xadc_wiz_2/xadc_wiz_2.xci">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -25,9 +25,15 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/controler.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/top_module.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -35,13 +41,19 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="doorlock_keypad"/>
+      <Option Name="TopModule" Val="HOMECURITY_TOP"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
     <File Path="$PPRDIR/../basys3_soc_24/basys3_soc_24.srcs/constrs_1/imports/소스파일/Basys-3-Master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../Desktop/SoC/HDL/basys3_soc_24/basys3_soc_24.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

@@ -1,0 +1,799 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Jun 24 14:34:46 2024
+# Process ID: 22192
+# Current directory: C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20876 C:\JAEWOO_SoC\Vivado_2019\basys3_soc_24\basys3_soc_24.xpr
+# Log file: C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/vivado.log
+# Journal file: C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.xpr
+WARNING: [Board 49-91] Board repository path '/u/estay/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store' does not exist, it will not be used to search board files.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 1058.574 ; gain = 155.883
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'mux_demux_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj mux_demux_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.srcs/sources_1/new/exam01_combinational_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module and_gate
+INFO: [VRFC 10-311] analyzing module half_adder_structural
+INFO: [VRFC 10-311] analyzing module half_adder_behavioral
+INFO: [VRFC 10-311] analyzing module half_adder_dataflow
+INFO: [VRFC 10-311] analyzing module full_adder_structural
+INFO: [VRFC 10-311] analyzing module full_adder_behavioral
+INFO: [VRFC 10-311] analyzing module full_adder_dataflow
+INFO: [VRFC 10-311] analyzing module fadder_4bits_s
+INFO: [VRFC 10-311] analyzing module fadder_4bit_d
+INFO: [VRFC 10-311] analyzing module fadd_sub_4bit_s
+INFO: [VRFC 10-311] analyzing module fadd_sub_4bits_d
+INFO: [VRFC 10-311] analyzing module comparrator_dataflow
+INFO: [VRFC 10-311] analyzing module comparator
+INFO: [VRFC 10-311] analyzing module comparator_n_bits_test
+INFO: [VRFC 10-311] analyzing module comparator_N_bits_b
+INFO: [VRFC 10-311] analyzing module decoder_2x4_b
+INFO: [VRFC 10-311] analyzing module decoder_2x4_d
+INFO: [VRFC 10-311] analyzing module encoder_4x2_b
+INFO: [VRFC 10-311] analyzing module encoder_4x2_d
+INFO: [VRFC 10-311] analyzing module mux_2_1
+INFO: [VRFC 10-311] analyzing module mux_4_1
+INFO: [VRFC 10-311] analyzing module mux_8_1
+INFO: [VRFC 10-311] analyzing module demux_1_4
+INFO: [VRFC 10-311] analyzing module mux_demux_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+"xelab -wto c63283ba217c4de3a761ea6b2bb28127 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mux_demux_test_behav xil_defaultlib.mux_demux_test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto c63283ba217c4de3a761ea6b2bb28127 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mux_demux_test_behav xil_defaultlib.mux_demux_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ComMsgMgrException: > not found while processing module instance <%s>: Invalid c_string in format.
+
+ERROR: [VRFC 10-2063] Module <mux_4_1_mux> not found while processing module instance <'Undefined'>
+ComMsgMgrException: > not found while processing module instance <%s>: Invalid c_string in format.
+
+ERROR: [VRFC 10-2063] Module <demux_1_4_demux> not found while processing module instance <'Undefined'>
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'mux_demux_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj mux_demux_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.srcs/sources_1/new/exam01_combinational_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module and_gate
+INFO: [VRFC 10-311] analyzing module half_adder_structural
+INFO: [VRFC 10-311] analyzing module half_adder_behavioral
+INFO: [VRFC 10-311] analyzing module half_adder_dataflow
+INFO: [VRFC 10-311] analyzing module full_adder_structural
+INFO: [VRFC 10-311] analyzing module full_adder_behavioral
+INFO: [VRFC 10-311] analyzing module full_adder_dataflow
+INFO: [VRFC 10-311] analyzing module fadder_4bits_s
+INFO: [VRFC 10-311] analyzing module fadder_4bit_d
+INFO: [VRFC 10-311] analyzing module fadd_sub_4bit_s
+INFO: [VRFC 10-311] analyzing module fadd_sub_4bits_d
+INFO: [VRFC 10-311] analyzing module comparrator_dataflow
+INFO: [VRFC 10-311] analyzing module comparator
+INFO: [VRFC 10-311] analyzing module comparator_n_bits_test
+INFO: [VRFC 10-311] analyzing module comparator_N_bits_b
+INFO: [VRFC 10-311] analyzing module decoder_2x4_b
+INFO: [VRFC 10-311] analyzing module decoder_2x4_d
+INFO: [VRFC 10-311] analyzing module encoder_4x2_b
+INFO: [VRFC 10-311] analyzing module encoder_4x2_d
+INFO: [VRFC 10-311] analyzing module mux_2_1
+INFO: [VRFC 10-311] analyzing module mux_4_1
+INFO: [VRFC 10-311] analyzing module mux_8_1
+INFO: [VRFC 10-311] analyzing module demux_1_4
+INFO: [VRFC 10-311] analyzing module mux_demux_test
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+"xelab -wto c63283ba217c4de3a761ea6b2bb28127 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mux_demux_test_behav xil_defaultlib.mux_demux_test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto c63283ba217c4de3a761ea6b2bb28127 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mux_demux_test_behav xil_defaultlib.mux_demux_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mux_4_1
+Compiling module xil_defaultlib.demux_1_4
+Compiling module xil_defaultlib.mux_demux_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot mux_demux_test_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim/xsim.dir/mux_demux_test_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Jun 24 14:36:49 2024...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "mux_demux_test_behav -key {Behavioral:sim_1:Functional:mux_demux_test} -tclbatch {mux_demux_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source mux_demux_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'mux_demux_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1058.574 ; gain = 0.000
+add_force {/mux_demux_test/d[0]} -radix bin {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/mux_demux_test/d[1]} -radix bin {0 0ns} {1 100000ps} -repeat_every 200000ps
+add_force {/mux_demux_test/d[2]} -radix bin {0 0ns} {1 150000ps} -repeat_every 300000ps
+add_force {/mux_demux_test/d[3]} -radix bin {0 0ns} {1 200000ps} -repeat_every 400000ps
+add_force {/mux_demux_test/mux_s[0]} -radix bin {2 0ns}
+ERROR: [Simtcl 6-179] Couldn't add force for the following reason: Illegal value '2': Character '2' is not a legal binary literal.
+add_force {/mux_demux_test/mux_s[0]} -radix hex {2 0ns}
+ERROR: [Simtcl 6-179] Couldn't add force for the following reason: Illegal value '2': Object size 1 does not match size of given value 2.
+add_force {/mux_demux_test/mux_s} -radix hex {2 0ns}
+add_force {/mux_demux_test/demux_s} -radix hex {3 0ns}
+run 2000 ns
+add_force {/mux_demux_test/mux_s} -radix hex {1 0ns}
+run 2000 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'mux_demux_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj mux_demux_test_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+"xelab -wto c63283ba217c4de3a761ea6b2bb28127 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mux_demux_test_behav xil_defaultlib.mux_demux_test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto c63283ba217c4de3a761ea6b2bb28127 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mux_demux_test_behav xil_defaultlib.mux_demux_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "mux_demux_test_behav -key {Behavioral:sim_1:Functional:mux_demux_test} -tclbatch {mux_demux_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source mux_demux_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'mux_demux_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1058.574 ; gain = 0.000
+add_force {/mux_demux_test/d[0]} -radix bin {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/mux_demux_test/d[1]} -radix bin {0 0ns} {1 100000ps} -repeat_every 200000ps
+add_force {/mux_demux_test/d[2]} -radix bin {0 0ns} {1 150000ps} -repeat_every 300000ps
+add_force {/mux_demux_test/d[3]} -radix bin {0 0ns} {1 200000ps} -repeat_every 400000ps
+add_force {/mux_demux_test/mux_s} -radix bin {1 0ns}
+add_force {/mux_demux_test/mux_s} -radix hex {2 0ns}
+add_force {/mux_demux_test/demux_s} -radix hex {3 0ns}
+run 2000 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close [ open C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.srcs/sources_1/new/exam02_sequential_logic.v w ]
+add_files C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.srcs/sources_1/new/exam02_sequential_logic.v
+update_compile_order -fileset sources_1
+set_property top D_flip_flop_n [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: mux_demux_test
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1534.645 ; gain = 245.074
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mux_demux_test' [C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.srcs/sources_1/new/exam01_combinational_logic.v:362]
+INFO: [Synth 8-6157] synthesizing module 'mux_4_1' [C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.srcs/sources_1/new/exam01_combinational_logic.v:329]
+INFO: [Synth 8-6155] done synthesizing module 'mux_4_1' (1#1) [C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.srcs/sources_1/new/exam01_combinational_logic.v:329]
+INFO: [Synth 8-6157] synthesizing module 'demux_1_4' [C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.srcs/sources_1/new/exam01_combinational_logic.v:350]
+INFO: [Synth 8-6155] done synthesizing module 'demux_1_4' (2#1) [C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.srcs/sources_1/new/exam01_combinational_logic.v:350]
+INFO: [Synth 8-6155] done synthesizing module 'mux_demux_test' (3#1) [C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.srcs/sources_1/new/exam01_combinational_logic.v:362]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1591.602 ; gain = 302.031
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1591.602 ; gain = 302.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1591.602 ; gain = 302.031
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1591.602 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1618.969 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 1698.184 ; gain = 408.613
+10 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 1698.184 ; gain = 608.406
+set_property top D_flip_flop_n [current_fileset]
+launch_runs synth_1 -jobs 4
+[Mon Jun 24 17:05:00 2024] Launched synth_1...
+Run output will be captured here: C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Jun 24 17:05:47 2024] Launched synth_1...
+Run output will be captured here: C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.runs/synth_1/runme.log
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1730.129 ; gain = 31.945
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'D_flip_flop_n' [C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.srcs/sources_1/new/exam02_sequential_logic.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'D_flip_flop_n' (1#1) [C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.srcs/sources_1/new/exam02_sequential_logic.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1762.469 ; gain = 64.285
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1762.469 ; gain = 64.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1762.469 ; gain = 64.285
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1762.469 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 1762.469 ; gain = 64.285
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1762.469 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1762.469 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Jun 24 17:11:13 2024] Launched synth_1...
+Run output will be captured here: C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Jun 24 17:11:23 2024] Launched synth_1...
+Run output will be captured here: C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.runs/synth_1/runme.log
+current_design rtl_1
+current_design synth_1
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2409.590 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2409.590 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+current_design rtl_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2541.414 ; gain = 71.262
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'D_flip_flop_n' [C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.srcs/sources_1/new/exam02_sequential_logic.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'D_flip_flop_n' (1#1) [C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.srcs/sources_1/new/exam02_sequential_logic.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2569.191 ; gain = 99.039
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2593.078 ; gain = 122.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2593.078 ; gain = 122.926
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2593.078 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 2593.078 ; gain = 122.926
+current_design synth_1
+set_property top D_flip_flop_p [current_fileset]
+set_property top D_flip_flop_p [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'D_flip_flop_p' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj D_flip_flop_p_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.srcs/sources_1/new/exam02_sequential_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module D_flip_flop_n
+INFO: [VRFC 10-311] analyzing module D_flip_flop_p
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+"xelab -wto c63283ba217c4de3a761ea6b2bb28127 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot D_flip_flop_p_behav xil_defaultlib.D_flip_flop_p xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto c63283ba217c4de3a761ea6b2bb28127 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot D_flip_flop_p_behav xil_defaultlib.D_flip_flop_p xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.D_flip_flop_p
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot D_flip_flop_p_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim/xsim.dir/D_flip_flop_p_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Jun 24 17:22:25 2024...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "D_flip_flop_p_behav -key {Behavioral:sim_1:Functional:D_flip_flop_p} -tclbatch {D_flip_flop_p.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source D_flip_flop_p.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'D_flip_flop_p_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 2593.078 ; gain = 0.000
+add_force {/D_flip_flop_p/d} -radix hex {0 0ns} {1 65000ps} -repeat_every 130000ps
+add_force {/D_flip_flop_p/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/D_flip_flop_p/reset_p} -radix hex {0 0ns}
+add_force {/D_flip_flop_p/enable} -radix hex {1 0ns}
+run 1000 ns
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'D_flip_flop_p' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj D_flip_flop_p_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+"xelab -wto c63283ba217c4de3a761ea6b2bb28127 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot D_flip_flop_p_behav xil_defaultlib.D_flip_flop_p xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto c63283ba217c4de3a761ea6b2bb28127 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot D_flip_flop_p_behav xil_defaultlib.D_flip_flop_p xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 2593.078 ; gain = 0.000
+add_force {/D_flip_flop_p/d} -radix hex {0 0ns} {1 65500ps} -repeat_every 131000ps
+add_force {/D_flip_flop_p/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/D_flip_flop_p/reset_p} -radix hex {0 0ns}
+add_force {/D_flip_flop_p/enable} -radix hex {1 0ns}
+run 1000 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top D_flip_flop_n [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'D_flip_flop_n' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj D_flip_flop_n_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+"xelab -wto c63283ba217c4de3a761ea6b2bb28127 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot D_flip_flop_n_behav xil_defaultlib.D_flip_flop_n xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto c63283ba217c4de3a761ea6b2bb28127 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot D_flip_flop_n_behav xil_defaultlib.D_flip_flop_n xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.D_flip_flop_n
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot D_flip_flop_n_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim/xsim.dir/D_flip_flop_n_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Jun 24 17:29:48 2024...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "D_flip_flop_n_behav -key {Behavioral:sim_1:Functional:D_flip_flop_n} -tclbatch {D_flip_flop_n.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source D_flip_flop_n.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'D_flip_flop_n_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 2593.078 ; gain = 0.000
+add_force {/D_flip_flop_n/d} -radix hex {0 0ns} {1 65500ps} -repeat_every 131000ps
+add_force {/D_flip_flop_n/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/D_flip_flop_n/reset_p} -radix hex {0 0ns}
+add_force {/D_flip_flop_n/enable} -radix hex {1 0ns}
+run 1000 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top D_flip_flop_p [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'D_flip_flop_p' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj D_flip_flop_p_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+"xelab -wto c63283ba217c4de3a761ea6b2bb28127 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot D_flip_flop_p_behav xil_defaultlib.D_flip_flop_p xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto c63283ba217c4de3a761ea6b2bb28127 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot D_flip_flop_p_behav xil_defaultlib.D_flip_flop_p xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "D_flip_flop_p_behav -key {Behavioral:sim_1:Functional:D_flip_flop_p} -tclbatch {D_flip_flop_p.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source D_flip_flop_p.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'D_flip_flop_p_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2593.078 ; gain = 0.000
+add_force {/D_flip_flop_p/d} -radix hex {0 0ns} {1 65500ps} -repeat_every 131000ps
+add_force {/D_flip_flop_p/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/D_flip_flop_p/reset_p} -radix hex {0 0ns}
+add_force {/D_flip_flop_p/enable} -radix hex {1 0ns}
+run 1000 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'D_flip_flop_p' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj D_flip_flop_p_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.srcs/sources_1/new/exam02_sequential_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module D_flip_flop_n
+INFO: [VRFC 10-311] analyzing module D_flip_flop_p
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+"xelab -wto c63283ba217c4de3a761ea6b2bb28127 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot D_flip_flop_p_behav xil_defaultlib.D_flip_flop_p xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto c63283ba217c4de3a761ea6b2bb28127 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot D_flip_flop_p_behav xil_defaultlib.D_flip_flop_p xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.D_flip_flop_p
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot D_flip_flop_p_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "D_flip_flop_p_behav -key {Behavioral:sim_1:Functional:D_flip_flop_p} -tclbatch {D_flip_flop_p.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source D_flip_flop_p.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'D_flip_flop_p_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 2593.078 ; gain = 0.000
+add_force {/D_flip_flop_p/d} -radix hex {0 0ns} {1 65500ps} -repeat_every 131000ps
+add_force {/D_flip_flop_p/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/D_flip_flop_p/reset_p} -radix hex {0 0ns}
+add_force {/D_flip_flop_p/enable} -radix hex {0 0ns}
+run 1000 ns
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'D_flip_flop_p' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj D_flip_flop_p_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+"xelab -wto c63283ba217c4de3a761ea6b2bb28127 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot D_flip_flop_p_behav xil_defaultlib.D_flip_flop_p xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto c63283ba217c4de3a761ea6b2bb28127 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot D_flip_flop_p_behav xil_defaultlib.D_flip_flop_p xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2593.078 ; gain = 0.000
+add_force {/D_flip_flop_p/d} -radix hex {0 0ns} {1 65500ps} -repeat_every 131000ps
+add_force {/D_flip_flop_p/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/D_flip_flop_p/reset_p} -radix hex {0 0ns}
+add_force {/D_flip_flop_p/enable} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 1000 ns
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'D_flip_flop_p' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj D_flip_flop_p_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+"xelab -wto c63283ba217c4de3a761ea6b2bb28127 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot D_flip_flop_p_behav xil_defaultlib.D_flip_flop_p xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto c63283ba217c4de3a761ea6b2bb28127 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot D_flip_flop_p_behav xil_defaultlib.D_flip_flop_p xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2593.078 ; gain = 0.000
+add_force {/D_flip_flop_p/d} -radix hex {0 0ns} {1 65500ps} -repeat_every 131000ps
+add_force {/D_flip_flop_p/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/D_flip_flop_p/reset_p} -radix hex {0 0ns}
+add_force {/D_flip_flop_p/enable} -radix hex {0 0ns} {1 60000ps} -repeat_every 120000ps
+run 1000 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'D_flip_flop_p' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj D_flip_flop_p_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+"xelab -wto c63283ba217c4de3a761ea6b2bb28127 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot D_flip_flop_p_behav xil_defaultlib.D_flip_flop_p xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto c63283ba217c4de3a761ea6b2bb28127 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot D_flip_flop_p_behav xil_defaultlib.D_flip_flop_p xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "D_flip_flop_p_behav -key {Behavioral:sim_1:Functional:D_flip_flop_p} -tclbatch {D_flip_flop_p.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source D_flip_flop_p.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'D_flip_flop_p_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2593.078 ; gain = 0.000
+add_force {/D_flip_flop_p/d} -radix hex {0 0ns} {1 65500ps} -repeat_every 131000ps
+add_force {/D_flip_flop_p/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/D_flip_flop_p/reset_p} -radix hex {0 0ns}
+add_force {/D_flip_flop_p/enable} -radix hex {0 0ns} {1 60000ps} -repeat_every 120000ps
+run 1000 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 24 17:52:38 2024...
