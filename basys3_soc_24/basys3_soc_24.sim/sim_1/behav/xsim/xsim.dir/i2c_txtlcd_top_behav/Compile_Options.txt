@@ -1,1 +1,0 @@
--wto "c63283ba217c4de3a761ea6b2bb28127" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "i2c_txtlcd_top_behav" "xil_defaultlib.i2c_txtlcd_top" "xil_defaultlib.glbl" -log "elaborate.log" 

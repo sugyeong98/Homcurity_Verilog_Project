@@ -1,7 +1,0 @@
-Running: xsim.dir/i2c_txtlcd_top_behav/xsimk.exe -simmode gui -wdb i2c_txtlcd_top_behav.wdb -simrunnum 0 -socket 55587
-Design successfully loaded
-Design Loading Memory Usage: 6148 KB (Peak: 6148 KB)
-Design Loading CPU Usage: 62 ms
-Simulation completed
-Simulation Memory Usage: 14760 KB (Peak: 14760 KB)
-Simulation CPU Usage: 3140 ms
