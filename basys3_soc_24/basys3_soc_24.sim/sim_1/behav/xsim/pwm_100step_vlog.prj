@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../basys3_soc_24.srcs/sources_1/new/exam01_combinational_logic.v" \
+"../../../../basys3_soc_24.srcs/sources_1/new/exam02_sequential_logic.v" \
+"../../../../basys3_soc_24.srcs/sources_1/new/clock_library.v" \
+"../../../../basys3_soc_24.srcs/sources_1/new/test_top.v" \
+"../../../../basys3_soc_24.srcs/sources_1/new/controller.v" \
+"../../../../basys3_soc_24.srcs/sources_1/new/Verilog_project1.v" \
+"../../../../basys3_soc_24.srcs/sources_1/new/project1_module2.v" \
+"../../../../basys3_soc_24.srcs/sim_1/new/tb_shift_register_SISO_Nbits_n.v" \
+"../../../../basys3_soc_24.srcs/sim_1/new/tb_shift_register_SISO_NBits_msb_n.v" \
+"../../../../basys3_soc_24.srcs/sim_1/new/tb_shift_register_SIPO_Nbit_n.v" \
+"../../../../basys3_soc_24.srcs/sim_1/new/tb_shift_register_PISO_Nbit_n.v" \
+"../../../../basys3_soc_24.srcs/sim_1/new/tb_shift_register_PIPO_Nbit_n.v" \
+"../../../../basys3_soc_24.srcs/sim_1/new/tb_dht11.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,7 @@
+Running: xsim.dir/bcd_upcounter_p_behav/xsimk.exe -simmode gui -wdb bcd_upcounter_p_behav.wdb -simrunnum 0 -socket 62660
+Design successfully loaded
+Design Loading Memory Usage: 6008 KB (Peak: 6008 KB)
+Design Loading CPU Usage: 30 ms
+Simulation completed
+Simulation Memory Usage: 6604 KB (Peak: 6604 KB)
+Simulation CPU Usage: 30 ms
