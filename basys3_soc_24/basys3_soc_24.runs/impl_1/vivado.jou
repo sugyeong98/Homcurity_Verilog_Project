@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Aug 29 14:35:38 2024
+# Process ID: 10216
+# Current directory: C:/Users/wodn0/Desktop/SoC/HDL/basys3_soc_24/basys3_soc_24.runs/impl_1
+# Command line: vivado.exe -log HOMECURITY_TOP.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source HOMECURITY_TOP.tcl -notrace
+# Log file: C:/Users/wodn0/Desktop/SoC/HDL/basys3_soc_24/basys3_soc_24.runs/impl_1/HOMECURITY_TOP.vdi
+# Journal file: C:/Users/wodn0/Desktop/SoC/HDL/basys3_soc_24/basys3_soc_24.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source HOMECURITY_TOP.tcl -notrace

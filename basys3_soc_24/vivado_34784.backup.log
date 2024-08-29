@@ -1,0 +1,381 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Jun 12 16:20:46 2024
+# Process ID: 34784
+# Current directory: C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13516 C:\JAEWOO_SoC\Vivado_2019\basys3_soc_24\basys3_soc_24.xpr
+# Log file: C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/vivado.log
+# Journal file: C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 1053.309 ; gain = 270.805
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'half_adder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj half_adder_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.srcs/sources_1/new/exam01_combinational_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module and_gate
+INFO: [VRFC 10-311] analyzing module half_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+"xelab -wto c63283ba217c4de3a761ea6b2bb28127 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot half_adder_behav xil_defaultlib.half_adder xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto c63283ba217c4de3a761ea6b2bb28127 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot half_adder_behav xil_defaultlib.half_adder xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.and_gate
+Compiling module xil_defaultlib.half_adder
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot half_adder_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim/xsim.dir/half_adder_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 12 16:21:28 2024...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "half_adder_behav -key {Behavioral:sim_1:Functional:half_adder} -tclbatch {half_adder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source half_adder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'half_adder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1125.480 ; gain = 21.023
+add_force {/half_adder/a} -radix hex {1 0ns}
+add_force {/half_adder/b} -radix hex {1 0ns}
+run 10 ns
+add_force {/half_adder/a} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+run 10 ns
+add_force {/half_adder/b} -radix hex {0 0ns} {1 10000ps} -repeat_every 20000ps
+run 10 ns
+add_force {/half_adder/a} -radix hex {0 0ns} {1 20000ps} -repeat_every 40000ps
+run 10 ns
+run 40 ns
+run 40 ns
+run 40 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'half_adder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj half_adder_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+"xelab -wto c63283ba217c4de3a761ea6b2bb28127 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot half_adder_behav xil_defaultlib.half_adder xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto c63283ba217c4de3a761ea6b2bb28127 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot half_adder_behav xil_defaultlib.half_adder xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "half_adder_behav -key {Behavioral:sim_1:Functional:half_adder} -tclbatch {half_adder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source half_adder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'half_adder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1174.016 ; gain = 0.000
+add_force {/half_adder/a} -radix hex {0 0ns} {1 20000ps} -repeat_every 40000ps
+add_force {/half_adder/b} -radix hex {0 0ns} {1 10000ps} -repeat_every 20000ps
+run 40 ns
+run 40 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'half_adder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj half_adder_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.srcs/sources_1/new/exam01_combinational_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module and_gate
+INFO: [VRFC 10-311] analyzing module half_adder
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+"xelab -wto c63283ba217c4de3a761ea6b2bb28127 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot half_adder_behav xil_defaultlib.half_adder xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto c63283ba217c4de3a761ea6b2bb28127 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot half_adder_behav xil_defaultlib.half_adder xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.half_adder
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot half_adder_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "half_adder_behav -key {Behavioral:sim_1:Functional:half_adder} -tclbatch {half_adder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source half_adder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'half_adder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1174.016 ; gain = 0.000
+add_force {/half_adder/a} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/half_adder/b} -radix hex {0 0ns} {1 100000ps} -repeat_every 200000ps
+run 400 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'half_adder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj half_adder_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.srcs/sources_1/new/exam01_combinational_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module and_gate
+INFO: [VRFC 10-311] analyzing module half_adder
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+"xelab -wto c63283ba217c4de3a761ea6b2bb28127 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot half_adder_behav xil_defaultlib.half_adder xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto c63283ba217c4de3a761ea6b2bb28127 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot half_adder_behav xil_defaultlib.half_adder xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.half_adder
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot half_adder_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "half_adder_behav -key {Behavioral:sim_1:Functional:half_adder} -tclbatch {half_adder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source half_adder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'half_adder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1174.016 ; gain = 0.000
+add_force {/half_adder/a} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/half_adder/b} -radix hex {0 0ns} {1 100000ps} -repeat_every 200000ps
+run 400 ns
+add_force {/half_adder/a} -radix hex {0 0ns} {1 25000ps} -repeat_every 50000ps
+add_force {/half_adder/b} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 200 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top half_adder_behavioral [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'half_adder_behavioral' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj half_adder_behavioral_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.srcs/sources_1/new/exam01_combinational_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module and_gate
+INFO: [VRFC 10-311] analyzing module half_adder_structural
+INFO: [VRFC 10-311] analyzing module half_adder_behavioral
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+"xelab -wto c63283ba217c4de3a761ea6b2bb28127 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot half_adder_behavioral_behav xil_defaultlib.half_adder_behavioral xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto c63283ba217c4de3a761ea6b2bb28127 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot half_adder_behavioral_behav xil_defaultlib.half_adder_behavioral xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.half_adder_behavioral
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot half_adder_behavioral_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim/xsim.dir/half_adder_behavioral_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 12 17:11:15 2024...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "half_adder_behavioral_behav -key {Behavioral:sim_1:Functional:half_adder_behavioral} -tclbatch {half_adder_behavioral.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source half_adder_behavioral.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'half_adder_behavioral_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1174.316 ; gain = 0.301
+add_force {/half_adder_behavioral/a} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/half_adder_behavioral/b} -radix hex {0 0ns} {1 100000ps} -repeat_every 200000ps
+run 400 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'half_adder_behavioral' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj half_adder_behavioral_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+"xelab -wto c63283ba217c4de3a761ea6b2bb28127 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot half_adder_behavioral_behav xil_defaultlib.half_adder_behavioral xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto c63283ba217c4de3a761ea6b2bb28127 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot half_adder_behavioral_behav xil_defaultlib.half_adder_behavioral xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/JAEWOO_SoC/Vivado_2019/basys3_soc_24/basys3_soc_24.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "half_adder_behavioral_behav -key {Behavioral:sim_1:Functional:half_adder_behavioral} -tclbatch {half_adder_behavioral.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source half_adder_behavioral.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'half_adder_behavioral_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1177.855 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 12 17:44:08 2024...

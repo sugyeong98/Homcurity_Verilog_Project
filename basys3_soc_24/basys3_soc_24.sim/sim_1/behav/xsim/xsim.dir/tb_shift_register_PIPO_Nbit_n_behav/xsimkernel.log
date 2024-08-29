@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_shift_register_PIPO_Nbit_n_behav/xsimk.exe -simmode gui -wdb tb_shift_register_PIPO_Nbit_n_behav.wdb -simrunnum 0 -socket 51296
+Design successfully loaded
+Design Loading Memory Usage: 6004 KB (Peak: 6004 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 6580 KB (Peak: 6580 KB)
+Simulation CPU Usage: 15 ms
