@@ -1,0 +1,702 @@
+
+*** Running vivado
+    with args -log HOMECURITY_TOP.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source HOMECURITY_TOP.tcl -notrace
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source HOMECURITY_TOP.tcl -notrace
+Command: link_design -top HOMECURITY_TOP -part xc7a35tcpg236-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 934.102 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 234 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.srcs/sources_1/ip/xadc_wiz_2/xadc_wiz_2.xdc] for cell 'adc1/inst'
+Finished Parsing XDC File [c:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.srcs/sources_1/ip/xadc_wiz_2/xadc_wiz_2.xdc] for cell 'adc1/inst'
+Parsing XDC File [C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.srcs/constrs_1/imports/xadc_wiz_2/xadc_wiz_2.xdc]
+Finished Parsing XDC File [C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.srcs/constrs_1/imports/xadc_wiz_2/xadc_wiz_2.xdc]
+Parsing XDC File [C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.srcs/constrs_1/imports/Downloads/Basys-3-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1057.246 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+
+7 Infos, 16 Warnings, 16 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1057.246 ; gain = 380.730
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.619 . Memory (MB): peak = 1076.250 ; gain = 19.004
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: ad088b0f
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1623.449 ; gain = 547.199
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 3 inverter(s) to 3 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 107d8402f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.240 . Memory (MB): peak = 1819.262 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 6 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 107d8402f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.264 . Memory (MB): peak = 1819.262 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 122c6bdbd
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.339 . Memory (MB): peak = 1819.262 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 5 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common MMCM/DPLL/XPLL driver.
+INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common driver.
+INFO: [Opt 31-1092] Phase BUFG optimization transformed 0 BUFG(s) to MBUFG(s).
+Phase 4 BUFG optimization | Checksum: 122c6bdbd
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.392 . Memory (MB): peak = 1819.262 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 122c6bdbd
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.430 . Memory (MB): peak = 1819.262 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 15dad77bb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.442 . Memory (MB): peak = 1819.262 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               6  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               5  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1819.262 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: b0acf8d5
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.597 . Memory (MB): peak = 1819.262 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: b0acf8d5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 1819.262 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: b0acf8d5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1819.262 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1819.262 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: b0acf8d5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1819.262 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+27 Infos, 16 Warnings, 16 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1819.262 ; gain = 762.016
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1819.262 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1819.262 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.runs/impl_1/HOMECURITY_TOP_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file HOMECURITY_TOP_drc_opted.rpt -pb HOMECURITY_TOP_drc_opted.pb -rpx HOMECURITY_TOP_drc_opted.rpx
+Command: report_drc -file HOMECURITY_TOP_drc_opted.rpt -pb HOMECURITY_TOP_drc_opted.pb -rpx HOMECURITY_TOP_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.runs/impl_1/HOMECURITY_TOP_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1819.262 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 8ffc7dd7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1819.262 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1819.262 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 8a46ca3c
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1819.262 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: d6050a74
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1819.262 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: d6050a74
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1819.262 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: d6050a74
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1819.262 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: da9424aa
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1819.262 ; gain = 0.000
+
+Phase 2.2 Global Placement Core
+
+Phase 2.2.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1018] Found 24 candidate LUT instances to create LUTNM shape
+INFO: [Physopt 32-775] End 1 Pass. Optimized 12 nets or cells. Created 2 new cells, deleted 10 existing cells and moved 0 existing cell
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1819.262 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            2  |             10  |                    12  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            2  |             10  |                    12  |           0  |           7  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2.1 Physical Synthesis In Placer | Checksum: 10a3a0e7b
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1819.262 ; gain = 0.000
+Phase 2.2 Global Placement Core | Checksum: 14b905e01
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1819.262 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 14b905e01
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1819.262 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 155af1fe9
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1819.262 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1df794171
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1819.262 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 17bcb1aac
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1819.262 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1812613dd
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1819.262 ; gain = 0.000
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 164a3048a
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1819.262 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 1b6d98813
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1819.262 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 127ce9548
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1819.262 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 16dfcd8eb
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1819.262 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 16dfcd8eb
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1819.262 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 141abeb0c
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 141abeb0c
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1825.109 ; gain = 5.848
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.217. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 1327c4971
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 1825.109 ; gain = 5.848
+Phase 4.1 Post Commit Optimization | Checksum: 1327c4971
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 1825.109 ; gain = 5.848
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1327c4971
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 1825.109 ; gain = 5.848
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 1327c4971
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 1825.109 ; gain = 5.848
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1825.109 ; gain = 0.000
+Phase 4.4 Final Placement Cleanup | Checksum: 8a75d5e5
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 1825.109 ; gain = 5.848
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 8a75d5e5
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 1825.109 ; gain = 5.848
+Ending Placer Task | Checksum: 6b0fe739
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 1825.109 ; gain = 5.848
+INFO: [Common 17-83] Releasing license: Implementation
+60 Infos, 16 Warnings, 16 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 1825.109 ; gain = 5.848
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1825.109 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.255 . Memory (MB): peak = 1826.141 ; gain = 1.031
+INFO: [Common 17-1381] The checkpoint 'C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.runs/impl_1/HOMECURITY_TOP_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file HOMECURITY_TOP_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 1826.141 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file HOMECURITY_TOP_utilization_placed.rpt -pb HOMECURITY_TOP_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file HOMECURITY_TOP_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1826.141 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1840.555 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.217 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 9c8cc67b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1840.570 ; gain = 0.016
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.217 | TNS=0.000 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+Phase 2 DSP Register Optimization | Checksum: 9c8cc67b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1840.570 ; gain = 0.016
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.217 | TNS=0.000 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.217 | TNS=0.000 |
+Phase 3 Critical Path Optimization | Checksum: 9c8cc67b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1840.570 ; gain = 0.016
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1840.570 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=0.217 | TNS=0.000 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Critical Path  |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total          |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1840.570 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: 9c8cc67b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1840.570 ; gain = 0.016
+INFO: [Common 17-83] Releasing license: Implementation
+74 Infos, 16 Warnings, 16 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1840.570 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.227 . Memory (MB): peak = 1858.438 ; gain = 17.867
+INFO: [Common 17-1381] The checkpoint 'C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.runs/impl_1/HOMECURITY_TOP_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 542f7247 ConstDB: 0 ShapeSum: a087e96b RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 10290ef64
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 1944.156 ; gain = 72.680
+Post Restoration Checksum: NetGraph: dec34bc3 NumContArr: 23cda3a1 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 10290ef64
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 1944.156 ; gain = 72.680
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 10290ef64
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 1950.203 ; gain = 78.727
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 10290ef64
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 1950.203 ; gain = 78.727
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: bc5e532e
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1964.184 ; gain = 92.707
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.207  | TNS=0.000  | WHS=-0.149 | THS=-13.973|
+
+Phase 2 Router Initialization | Checksum: c37ebd34
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1964.184 ; gain = 92.707
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 1937
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 1937
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: b45366c3
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:22 . Memory (MB): peak = 1965.539 ; gain = 94.062
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 405
+ Number of Nodes with overlaps = 107
+ Number of Nodes with overlaps = 61
+ Number of Nodes with overlaps = 25
+ Number of Nodes with overlaps = 14
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.201  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 139c08d2f
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:24 . Memory (MB): peak = 1965.539 ; gain = 94.062
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 15
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.208  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 91a1dbbc
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1965.539 ; gain = 94.062
+Phase 4 Rip-up And Reroute | Checksum: 91a1dbbc
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1965.539 ; gain = 94.062
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 91a1dbbc
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1965.539 ; gain = 94.062
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 91a1dbbc
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1965.539 ; gain = 94.062
+Phase 5 Delay and Skew Optimization | Checksum: 91a1dbbc
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1965.539 ; gain = 94.062
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: f45eda7f
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:26 . Memory (MB): peak = 1965.539 ; gain = 94.062
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.296  | TNS=0.000  | WHS=0.135  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: f45eda7f
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:26 . Memory (MB): peak = 1965.539 ; gain = 94.062
+Phase 6 Post Hold Fix | Checksum: f45eda7f
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:26 . Memory (MB): peak = 1965.539 ; gain = 94.062
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.511361 %
+  Global Horizontal Routing Utilization  = 0.44482 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: ffd6f263
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:26 . Memory (MB): peak = 1965.539 ; gain = 94.062
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: ffd6f263
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:26 . Memory (MB): peak = 1965.539 ; gain = 94.062
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1c376ddd1
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:26 . Memory (MB): peak = 1965.539 ; gain = 94.062
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.296  | TNS=0.000  | WHS=0.135  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 1c376ddd1
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:26 . Memory (MB): peak = 1965.539 ; gain = 94.062
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:26 . Memory (MB): peak = 1965.539 ; gain = 94.062
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+89 Infos, 16 Warnings, 16 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:27 . Memory (MB): peak = 1965.539 ; gain = 107.102
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1965.539 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.290 . Memory (MB): peak = 1974.449 ; gain = 8.910
+INFO: [Common 17-1381] The checkpoint 'C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.runs/impl_1/HOMECURITY_TOP_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file HOMECURITY_TOP_drc_routed.rpt -pb HOMECURITY_TOP_drc_routed.pb -rpx HOMECURITY_TOP_drc_routed.rpx
+Command: report_drc -file HOMECURITY_TOP_drc_routed.rpt -pb HOMECURITY_TOP_drc_routed.pb -rpx HOMECURITY_TOP_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.runs/impl_1/HOMECURITY_TOP_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file HOMECURITY_TOP_methodology_drc_routed.rpt -pb HOMECURITY_TOP_methodology_drc_routed.pb -rpx HOMECURITY_TOP_methodology_drc_routed.rpx
+Command: report_methodology -file HOMECURITY_TOP_methodology_drc_routed.rpt -pb HOMECURITY_TOP_methodology_drc_routed.pb -rpx HOMECURITY_TOP_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.runs/impl_1/HOMECURITY_TOP_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file HOMECURITY_TOP_power_routed.rpt -pb HOMECURITY_TOP_power_summary_routed.pb -rpx HOMECURITY_TOP_power_routed.rpx
+Command: report_power -file HOMECURITY_TOP_power_routed.rpt -pb HOMECURITY_TOP_power_summary_routed.pb -rpx HOMECURITY_TOP_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+101 Infos, 16 Warnings, 16 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file HOMECURITY_TOP_route_status.rpt -pb HOMECURITY_TOP_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file HOMECURITY_TOP_timing_summary_routed.rpt -pb HOMECURITY_TOP_timing_summary_routed.pb -rpx HOMECURITY_TOP_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file HOMECURITY_TOP_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file HOMECURITY_TOP_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file HOMECURITY_TOP_bus_skew_routed.rpt -pb HOMECURITY_TOP_bus_skew_routed.pb -rpx HOMECURITY_TOP_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+Command: write_bitstream -force HOMECURITY_TOP.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Bitstream compression saved 11805536 bits.
+Writing bitstream ./HOMECURITY_TOP.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+120 Infos, 16 Warnings, 16 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2416.711 ; gain = 410.258
+INFO: [Common 17-206] Exiting Vivado at Mon Sep  2 16:49:53 2024...

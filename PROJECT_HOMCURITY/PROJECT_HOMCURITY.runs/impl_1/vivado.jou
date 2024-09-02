@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Sep  2 16:48:15 2024
+# Process ID: 9268
+# Current directory: C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.runs/impl_1
+# Command line: vivado.exe -log HOMECURITY_TOP.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source HOMECURITY_TOP.tcl -notrace
+# Log file: C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.runs/impl_1/HOMECURITY_TOP.vdi
+# Journal file: C:/Users/wodn0/Desktop/SoC/HDL/PROJECT_HOMCURITY/PROJECT_HOMCURITY.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source HOMECURITY_TOP.tcl -notrace
