@@ -1,7 +1,0 @@
-Running: xsim.dir/shift_register_SISO_Nbit_msb_n_behav/xsimk.exe -simmode gui -wdb shift_register_SISO_Nbit_msb_n_behav.wdb -simrunnum 0 -socket 54125
-Design successfully loaded
-Design Loading Memory Usage: 6452 KB (Peak: 6452 KB)
-Design Loading CPU Usage: 15 ms
-Simulation completed
-Simulation Memory Usage: 7040 KB (Peak: 7040 KB)
-Simulation CPU Usage: 46 ms

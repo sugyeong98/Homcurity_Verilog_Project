@@ -1,7 +1,0 @@
-Running: xsim.dir/pwm_100step_behav/xsimk.exe -simmode gui -wdb pwm_100step_behav.wdb -simrunnum 0 -socket 57921
-Design successfully loaded
-Design Loading Memory Usage: 5992 KB (Peak: 5992 KB)
-Design Loading CPU Usage: 31 ms
-Simulation completed
-Simulation Memory Usage: 14596 KB (Peak: 14596 KB)
-Simulation CPU Usage: 390 ms
